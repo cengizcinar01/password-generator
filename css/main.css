@@ -46,3 +46,19 @@ body {
     background-color: var(--gray);
     border-radius: 0.625rem;
 }
+
+.top-bar .password {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.1rem;
+}
+
+.top-bar .copy-btn {
+    cursor: pointer;
+    font-size: 1.625rem;
+}
+
+.top-bar .copy-btn:hover {
+    color: var(--primary-color);
+}
