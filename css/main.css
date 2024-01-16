@@ -31,3 +31,18 @@ body {
     min-height: 100vh;
     margin: auto;
 }
+
+.alert {
+    visibility: hidden;
+    margin-bottom: 1rem;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem 2rem;
+    background-color: var(--gray);
+    border-radius: 0.625rem;
+}
