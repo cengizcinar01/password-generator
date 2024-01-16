@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    --darkest-gray: #030924;
+    --dark-gray: #1d2946;
+    --gray: #2f3e56;
+    --medium-gray: #8a99ae;
+    --light-gray: #bac1c9;
+    --primary-color: #d6854b;
+    --primary-color-hover: #cf6e3a;
+    --safe: #63d18b;
+    --warning: #e0bc2c;
+    --danger: #d04f4f;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
