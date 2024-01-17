@@ -91,9 +91,23 @@ body {
 
 .slider-container .label-container label {
     font-size: 1rem;
-  }
-  
-  .slider-container .label-container span {
+}
+
+.slider-container .label-container span {
     font-size: 1.625rem;
     color: var(--primary-color);
-  }
+}
+
+/* Character Length Slider Itself*/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    width: 100%;
+    height: 1.25rem;
+    margin-top: 0.5rem;
+    background: var(--dark-gray);
+    cursor: pointer;
+    border-radius: 1rem;
+}
