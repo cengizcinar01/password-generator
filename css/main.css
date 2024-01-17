@@ -208,3 +208,31 @@ input:checked+.toggle-slider:before {
     -ms-transform: translateX(22px);
     transform: translateX(22px);
 }
+
+.strength-meter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: var(--dark-gray);
+    border-radius: 0.25rem;
+}
+
+.strength-meter span {
+    font-size: 1rem;
+    color: var(--medium-gray);
+    text-transform: uppercase;
+}
+
+.strength-meter .bars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.strength-meter .bars .bar {
+    width: 0.7rem;
+    height: 1.7rem;
+    border: 1px solid var(--light-gray);
+}
