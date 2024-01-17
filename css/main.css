@@ -185,3 +185,16 @@ input[type='range']::-moz-range-thumb {
     cursor: pointer;
     border-radius: 2rem;
 }
+
+.toggle-slider:before {
+    -webkit-transition: 0.2s;
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    transition: 0.2s;
+    background-color: white;
+    border-radius: 50%;
+}
