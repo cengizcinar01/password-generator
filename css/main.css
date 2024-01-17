@@ -77,3 +77,14 @@ body {
     align-items: center;
     gap: 2rem;
 }
+
+/* Character Length Slider */
+.slider-container {
+    width: 100%;
+}
+
+.slider-container .label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
