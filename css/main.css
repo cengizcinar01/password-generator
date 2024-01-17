@@ -198,3 +198,13 @@ input[type='range']::-moz-range-thumb {
     background-color: white;
     border-radius: 50%;
 }
+
+input:checked+.toggle-slider {
+    background-color: var(--primary-color);
+}
+
+input:checked+.toggle-slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
