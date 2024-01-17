@@ -88,3 +88,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.slider-container .label-container label {
+    font-size: 1rem;
+  }
+  
+  .slider-container .label-container span {
+    font-size: 1.625rem;
+    color: var(--primary-color);
+  }
