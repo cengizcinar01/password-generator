@@ -144,3 +144,25 @@ input[type='range']::-moz-range-thumb {
     border: 1px solid var(--primary-color);
     border-radius: 50%;
 }
+
+/* Toggle Switch Container */
+.switch-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.switch-container span {
+    font-size: 1rem;
+}
+
+/* The box around the toggle switch */
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 51px;
+    height: 30px;
+  }
+  
+  
