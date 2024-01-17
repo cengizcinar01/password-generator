@@ -236,3 +236,21 @@ input:checked+.toggle-slider:before {
     height: 1.7rem;
     border: 1px solid var(--light-gray);
 }
+
+/* Submit Button */
+.submit-btn {
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    padding: 1.25rem 1rem;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+}
