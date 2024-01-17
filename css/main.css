@@ -111,3 +111,15 @@ input[type="range"] {
     cursor: pointer;
     border-radius: 1rem;
 }
+
+/* Track: WebKit Based Browsers */
+input[type='range']::-webkit-slider-runnable-track {
+    height: 1.25rem;
+    background: var(--dark-gray);
+}
+
+/* Track: Mozilla Firefox */
+input[type='range']::-moz-range-track {
+    height: 1.25rem;
+    background: var(--dark-gray);
+}
