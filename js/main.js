@@ -123,4 +123,23 @@
             DOM.password.style.fontSize = '1rem';
         }
     };
+
+    const checkPasswordStrength = (password) => {
+        let score = 0;
+
+        if (/[!?@#$%^&*()_]/g.test(password)) score += 10;
+        if (/[0-9]/g.test(password)) score += 10;
+
+        if (password.length < 8) {
+            score = 0;
+        } else if (password.length >= 8 && password.length <= 12) {
+            score += 10;
+        } else if (password.length >= 13 && password.length < 20) {
+            score += 30;
+        } else if (password.length >= 20) {
+            score += 40;
+        }
+
+        return score;
+    };
 })();
