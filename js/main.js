@@ -21,5 +21,13 @@
         setTimeout(() => {
             DOM.alert.style.visibility = 'hidden';
         }, 3000);
+
+        const copyToClipboard = async (str) => {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                return await navigator.clipboard.writeText(str);
+            }
+
+            throw new Error('Clipboard not supported');
+        };
     });
 };
