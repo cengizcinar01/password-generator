@@ -13,4 +13,13 @@
         strengthBars: $$('.strength-meter .bars .bar'),
         submitBtn: $('.submit-btn'),
     };
+
+    DOM.copyBtn.addEventListener('click', (e) => {
+        copyToClipboard(DOM.password.textContent);
+        DOM.alert.style.visibility = 'visible';
+
+        setTimeout(() => {
+            DOM.alert.style.visibility = 'hidden';
+        }, 3000);
+    });
 };
