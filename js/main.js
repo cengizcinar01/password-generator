@@ -22,6 +22,17 @@
             DOM.alert.style.visibility = 'hidden';
         }, 3000);
 
+        DOM.charInput.addEventListener('Input', (e) => {
+            DOM.charLength.textContent = e.target.value;
+        });
+
+        DOM.submitBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const charLength = DOM.charInput.value;
+            const numbers = DOM.numbersSwitch.checked;
+            const symbols = DOM.symbolsSwitch.checked;
+        });
+
         const copyToClipboard = async (str) => {
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 return await navigator.clipboard.writeText(str);
