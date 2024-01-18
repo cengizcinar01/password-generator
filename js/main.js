@@ -109,4 +109,18 @@
 
         return password.join('');
     };
+
+    const setFontSize = (password) => {
+        const length = password.length;
+
+        if (length < 20) {
+            DOM.password.style.fontSize = '1.5rem';
+        } else if (length < 25) {
+            DOM.password.style.fontSize = '1.25rem';
+        } else if (length < 27) {
+            DOM.password.style.fontSize = '1.15rem';
+        } else {
+            DOM.password.style.fontSize = '1rem';
+        }
+    };
 })();
