@@ -63,6 +63,10 @@ body {
     border-radius: var(--border-radius, 0.625rem);
     box-shadow: var(--box-shadow, 0 2px 4px rgba(0, 0, 0, 0.1));
     transition: background-color 0.3s;
+
+    @media (max-width: 768px) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .top-bar .password {
