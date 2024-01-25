@@ -286,3 +286,9 @@ input:checked+.toggle-slider:before {
         box-shadow: 0 0 0 2px var(--focus-outline-color);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0 10px;
+    }
+}
