@@ -272,4 +272,9 @@ input:checked+.toggle-slider:before {
     text-transform: uppercase;
     letter-spacing: 0.075rem;
     transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+        background-color: var(--primary-color-hover);
+        transform: translateY(-2px);
+    }
 }
