@@ -2,10 +2,11 @@
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/main.css">
         <title>Password Generator</title>
-        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
@@ -15,24 +16,24 @@
 
                 <div class="top-bar">
                     <span class="password">Password Generator</span>
-                    <span class="copy-btn">Copy</span>
+                    <span class="copy-btn"><i class="fa-solid fa-copy"></i></span>
                 </div>
 
                 <div class="form-container">
                     <form class="password-form">
-
                         <div class="slider-container">
                             <div class="label-container">
                                 <label>Character Length</label>
                                 <span>10</span>
                             </div>
-                            <input type="range" min="1" max="30" value="10" class="slider-range" id="charLength">
+
+                            <input type="range" min="1" max="20" value="10" class="slider-range" id="charLength">
                         </div>
 
                         <div class="switch-container">
-                            <span>Number</span>
+                            <span>Numbers</span>
                             <label class="toggle-switch">
-                                <input type="checkbox" name="number-switch">
+                                <input type="checkbox" name="numbers-switch">
                                 <span class="toggle-slider round"></span>
                             </label>
                         </div>
@@ -47,6 +48,7 @@
 
                         <div class="strength-meter">
                             <span>Strength</span>
+
                             <div class="bars">
                                 <div class="bar" id="bar1"></div>
                                 <div class="bar" id="bar2"></div>
@@ -57,14 +59,13 @@
 
                         <button type="submit" class="submit-btn">
                             Generate
+                            <span class="submit-icon"><i class="fa-sharp fa-solid fa-arrow-right"></i></span>
                         </button>
-
                     </form>
                 </div>
-
             </div>
         </main>
-        <script src="js/main.js"></script>
+        <script src="assets/main.js"></script>
     </body>
 
 </html>
